@@ -7,7 +7,7 @@ import { Phone } from 'lucide-react';
 export default function BookingCTA() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '966500000000';
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '966561930521';
 
   const [formData, setFormData] = useState({
     name: '',

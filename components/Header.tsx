@@ -2,12 +2,13 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { SiWhatsapp } from 'react-icons/si';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '966500000000';
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '966561930521';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,14 +42,23 @@ export default function Header() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <button
-            onClick={() => scrollToSection('hero')}
-            className="text-2xl lg:text-3xl font-bold text-[var(--color-light)] hover:opacity-80 transition-opacity"
-            data-testid="button-logo"
-          >
-            لمسه ابداع
-          </button>
-
+<button
+  onClick={() => scrollToSection('hero')}
+  className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+  data-testid="button-logo"
+>
+<Image
+  src="/Hoda.png"
+  alt="Hoda CarWash"
+  width={250}
+  height={200}
+  className="w-22 h-22 object-contain shrink-0 translate-y-2"
+  priority
+/>
+  <span className="text-2xl lg:text-3xl font-bold text-[var(--color-light)] leading-none whitespace-nowrap">
+    لمسة ابداع
+  </span>
+</button>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (

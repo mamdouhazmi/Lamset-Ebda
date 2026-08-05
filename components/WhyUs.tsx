@@ -68,7 +68,7 @@ export default function WhyUs() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-[var(--color-light)] mb-4">
-            لماذا تختار <span className="text-gradient">لمسه ابداع</span>؟
+            لماذا تختار <span className="text-gradient">لمسة ابداع</span>؟
           </h2>
           <p className="text-lg md:text-xl text-[var(--color-muted-blue)] max-w-2xl mx-auto">
             أرقام تتحدث عن نفسها وتعكس التزامنا بالتميز

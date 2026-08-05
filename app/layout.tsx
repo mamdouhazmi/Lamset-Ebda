@@ -3,13 +3,13 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'لمسه ابداع | غسيل وتلميع السيارات المتنقل في الرياض',
+  title: 'لمسة ابداع | غسيل وتلميع السيارات المتنقل في الرياض',
   description: 'خدمة متنقلة لغسيل وتلميع السيارات الفاخرة في الرياض. نعيد إلى سيارتك بريقها الأصيل بلمسة إبداع واحترافية عالية. تنظيف بالبخار، حماية سيراميك، باقات VIP.',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/favicon.svg',
+        url: '/favicon.png',
         type: 'image/svg+xml',
       },
     ],

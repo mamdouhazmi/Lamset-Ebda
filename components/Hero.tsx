@@ -4,7 +4,7 @@ import { ArrowDown, Star, Users, Clock, Award } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 export default function Hero() {
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '966500000000';
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '966561930521';
   const [counts, setCounts] = useState({ clients: 0, cars: 0 });
 
   useEffect(() => {
