@@ -26,7 +26,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-3xl font-bold text-[#E0E1DD] mb-4">
-              لمسة ابداع
+              لمسه ابداع
             </h3>
             <p className="text-[#778DA9] leading-relaxed">
               خدمات تنظيف وتلميع احترافية متنقلة. نعيد إلى سيارتك بريقها الأصيل بأيدي خبراء ومواد عالمية.
@@ -43,7 +43,7 @@ export default function Footer() {
                 <li key={index}>
                   <button
                     onClick={() => scrollToSection(link.id)}
-                    className="text-[#778DA9] hover:text-[#415A77] transition-colors"
+                    className="text-[#778DA9] hover:text-[#E0E1DD] transition-colors"
                     data-testid={`footer-link-${link.id}`}
                   >
                     {link.label}
@@ -64,7 +64,7 @@ export default function Footer() {
                   href={`https://wa.me/${whatsappNumber}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-[#778DA9] hover:text-[#415A77] transition-colors"
+                  className="flex items-center gap-3 text-[#778DA9] hover:text-[#E0E1DD] transition-colors"
                   data-testid="footer-whatsapp"
                 >
                   <SiWhatsapp className="w-5 h-5" />
@@ -74,9 +74,8 @@ export default function Footer() {
               <li>
                 <a
                   href={`tel:+${whatsappNumber}`}
-                  className="flex items-center gap-3 text-[#778DA9] hover:text-[#415A77] transition-colors"
+                  className="flex items-center gap-3 text-[#778DA9] hover:text-[#E0E1DD] transition-colors"
                   data-testid="footer-phone"
-                  dir="ltr"
                 >
                   <Phone className="w-5 h-5" />
                   <span>{localPhone}</span>
@@ -116,7 +115,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="w-10 h-10 rounded-full bg-[#1B263B] flex items-center justify-center text-[#778DA9] hover:text-[#415A77] hover:bg-[#415A77]/20 transition-colors border border-[#415A77]/30"
+              className="w-10 h-10 rounded-full bg-[#1B263B] flex items-center justify-center text-[#778DA9] hover:text-[#E0E1DD] hover:bg-[#415A77]/20 transition-colors border border-[#415A77]/30"
               data-testid="social-instagram"
             >
               <SiInstagram className="w-5 h-5" />
@@ -126,7 +125,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="w-10 h-10 rounded-full bg-[#1B263B] flex items-center justify-center text-[#778DA9] hover:text-[#415A77] hover:bg-[#415A77]/20 transition-colors border border-[#415A77]/30"
+              className="w-10 h-10 rounded-full bg-[#1B263B] flex items-center justify-center text-[#778DA9] hover:text-[#E0E1DD] hover:bg-[#415A77]/20 transition-colors border border-[#415A77]/30"
               data-testid="social-facebook"
             >
               <SiFacebook className="w-5 h-5" />
@@ -136,7 +135,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TikTok"
-              className="w-10 h-10 rounded-full bg-[#1B263B] flex items-center justify-center text-[#778DA9] hover:text-[#415A77] hover:bg-[#415A77]/20 transition-colors border border-[#415A77]/30"
+              className="w-10 h-10 rounded-full bg-[#1B263B] flex items-center justify-center text-[#778DA9] hover:text-[#E0E1DD] hover:bg-[#415A77]/20 transition-colors border border-[#415A77]/30"
               data-testid="social-tiktok"
             >
               <SiTiktok className="w-5 h-5" />
@@ -153,7 +152,7 @@ export default function Footer() {
           </div>
 
           <p className="text-[#778DA9] text-center md:text-right">
-            © 2026 لمسة ابداع. جميع الحقوق محفوظة.
+            © 2026 لمسه ابداع. جميع الحقوق محفوظة.
           </p>
         </div>
       </div>

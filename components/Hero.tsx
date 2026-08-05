@@ -70,9 +70,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="inline-flex items-center gap-3 px-6 py-2 rounded-full glass-effect mb-8"
+            className="mb-8 inline-flex items-center gap-3 rounded-full border border-[#415A77] bg-[rgba(65,90,119,0.15)] px-6 py-2"
           >
-            <span className="text-[var(--color-accent-blue)] text-sm lg:text-base font-medium">
+            <span className="text-sm font-medium text-[#E0E1DD] lg:text-base">
               خدمة متنقلة | الرياض
             </span>
           </motion.div>
@@ -144,7 +144,7 @@ export default function Hero() {
                   <div className="text-2xl lg:text-3xl font-bold text-[var(--color-light)] mb-1">
                     {stat.value}
                   </div>
-                  <div className="text-sm lg:text-base text-[var(--color-muted-blue)]">
+                  <div className="text-sm font-semibold text-[#E0E1DD] lg:text-base">
                     {stat.label}
                   </div>
                 </div>
@@ -164,7 +164,7 @@ export default function Hero() {
             <Star className="w-6 h-6 text-[#C9A84C] fill-[#C9A84C]" />
             <div>
               <div className="text-[var(--color-light)] font-bold">تقييم 5 نجوم</div>
-              <div className="text-[var(--color-muted-blue)] text-sm">من عملائنا</div>
+              <div className="text-sm text-[#E0E1DD]">من عملائنا</div>
             </div>
           </div>
         </motion.div>

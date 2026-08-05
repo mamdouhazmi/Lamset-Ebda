@@ -128,7 +128,7 @@ export default function BeforeAfter() {
               className={`rounded-lg px-5 py-3 font-semibold transition-all sm:px-6 ${
                 activeTab === index
                   ? 'bg-[#415A77] text-[#E0E1DD] shadow-lg shadow-[#0D1B2A]/20'
-                  : 'border border-[#415A77]/30 bg-[#1B263B] text-[#778DA9] hover:border-[#415A77] hover:text-[#E0E1DD]'
+                  : 'border border-[#415A77]/30 bg-[#1B263B] text-[#E0E1DD] hover:border-[#415A77] hover:bg-[#415A77]/20'
               }`}
               data-testid={`tab-${index}`}
             >
@@ -197,13 +197,13 @@ export default function BeforeAfter() {
             <div className="flex items-center justify-between border-b border-[#415A77]/30 px-4 py-3 sm:px-6">
               <div>
                 <p id="comparison-dialog-title" className="font-semibold text-[#E0E1DD]">{category.title}</p>
-                <p className="text-sm text-[#778DA9]" dir="ltr">{selectedIndex + 1} / {category.pairs.length}</p>
+                <p className="text-sm font-medium text-[#E0E1DD]" dir="ltr">{selectedIndex + 1} / {category.pairs.length}</p>
               </div>
               <button
                 ref={closeButtonRef}
                 type="button"
                 onClick={() => setSelectedIndex(null)}
-                className="flex h-10 w-10 items-center justify-center rounded-full text-[#778DA9] transition hover:bg-[#415A77] hover:text-[#E0E1DD] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E0E1DD]"
+                className="flex h-10 w-10 items-center justify-center rounded-full text-[#E0E1DD] transition hover:bg-[#415A77] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E0E1DD]"
                 aria-label="إغلاق المقارنة"
               >
                 <X className="h-5 w-5" aria-hidden="true" />
